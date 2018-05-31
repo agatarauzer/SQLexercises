@@ -1,0 +1,11 @@
+SELECT *
+FROM
+(
+  (SELECT city, LENGTH (city) AS maxlen
+  FROM station
+  ORDER BY maxlen DESC LIMIT 1)
+  UNION
+  (SELECT city, LENGTH (city) AS minlen
+  FROM station
+  ORDER BY minlen, city LIMIT 1)
+) two_cities;
