@@ -1,0 +1,5 @@
+SELECT (months*salary) as total_earnings, COUNT(*)
+FROM employee
+GROUP BY total_earnings
+HAVING total_earnings = MAX(months*salary)
+ORDER BY total_earnings DESC LIMIT 1;
