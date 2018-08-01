@@ -1,0 +1,22 @@
+DROP FUNCTION IF EXISTS GetUserById;
+
+DELIMITER $$
+
+CREATE FUNCTION GetUserById(givenId INT) returns varchar(20) deterministic
+begin
+	declare result varchar(20) default 'Id not found';
+
+    IF givenId > 0 THEN
+		  SET result = (
+        SELECT CONCAT(firstname, ' ', lastname)
+        FROM users
+        WHERE id = givenId
+        );
+
+	  return result;
+	end if;
+end $$
+
+DELIMITER ;
+
+Select GetUserById(4) as searchedUser;
