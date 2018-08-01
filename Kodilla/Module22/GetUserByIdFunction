@@ -3,20 +3,24 @@ DROP FUNCTION IF EXISTS GetUserById;
 DELIMITER $$
 
 CREATE FUNCTION GetUserById(givenId INT) returns varchar(20) deterministic
-begin
-	declare result varchar(20) default 'Id not found';
+BEGIN
+	DECLARE result varchar(20) DEFAULT 'Id not found';
 
     IF givenId > 0 THEN
-		  SET result = (
-        SELECT CONCAT(firstname, ' ', lastname)
-        FROM users
-        WHERE id = givenId
-        );
+	    SET result = (
+            SELECT CONCAT(firstname, ' ', lastname)
+            FROM readers
+            WHERE reader_id = givenId
+            );
+    ELSE
+        SET result = 'Id not found';
 
-	  return result;
-	end if;
-end $$
+    END IF;
+
+    RETURN result;
+
+END $$
 
 DELIMITER ;
 
-Select GetUserById(4) as searchedUser;
+Select GetUserById(4) as SEARCHED_USER;
