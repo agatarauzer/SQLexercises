@@ -1,0 +1,7 @@
+//solution using split function
+SELECT project, array_to_string(regexp_split_to_array(address, '[0-9,]'), '') AS letters, array_to_string(regexp_split_to_array(address, '[a-zA-Z,]'), '') AS numbers
+FROM repositories;
+
+//solution using replace function
+SELECT project, regexp_replace(address, '[0-9,]', '', 'g') AS letters, regexp_replace(address, '[a-zA-Z,]', '', 'g') AS numbers
+FROM repositories;
