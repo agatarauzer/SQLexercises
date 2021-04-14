@@ -5,9 +5,14 @@
 
 ## CODEWARS       ![alt text](https://www.codewars.com/users/galapagos/badges/micro)
 
+(PostgreSQL)
+
 ##### 6kyu
 - [Simple Table Totaling](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/SimpleTableTotaling)
 - [Simple Union All](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/SimpleUnionAll)
+- [Simple Having](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/SimpleHaving)
+- [Regex Alpha Numeric Split](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/RegexAlphaNumericSplit)
+
 
 ##### 7kyu
 - [Best Selling Books](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/7kyu/BestSellingBooks)
@@ -17,6 +22,8 @@
 
 
 ## HACKERRANK
+
+(MySQL)
 
 ##### Basic select
 - [Revising the Select Query I](https://github.com/agatarauzer/SQLexercises/blob/master/Hackerrank/BasicSelect/RevisingTheSelectQueryI)
@@ -70,4 +77,6 @@
 
 
 ## Kodilla
-to do..
+(MySQL)
+
+Exercises from bootcamp module 22, which covers concepts as follows: creating tables, inserting data, functions, triggers, procedures, indexes.
