@@ -12,7 +12,9 @@
 - [Simple Union All](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/SimpleUnionAll)
 - [Simple Having](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/SimpleHaving)
 - [Regex Alpha Numeric Split](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/RegexAlphaNumericSplit)
-
+- [Calculating Batting Average](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/CalculatingBattingAverage)
+- [SQL Bug Fixing: Fix The Query - Totaling](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/FixTheQueryTotaling)
+- [Top 10 Customers By Total Payments Amount](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/6kyu/Top10customersByTotalPaymentsAmount)
 
 ##### 7kyu
 - [Best Selling Books](https://github.com/agatarauzer/SQLexercises/blob/master/Codewars/7kyu/BestSellingBooks)
