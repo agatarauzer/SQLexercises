@@ -1,0 +1,3 @@
+SELECT substring(project FROM 1 FOR commits) AS project,
+       substring(address FROM char_length(address) - contributors + 1 FOR contributors) AS address
+FROM repositories;
